@@ -33,55 +33,21 @@ export default function Home() {
       {/* Project Header */}
       <header className="sticky top-0 z-50 bg-black/95 backdrop-blur-sm border-b border-red-900/30">
         <div className="max-w-7xl mx-auto px-4 py-4">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="flex items-center gap-4">
+          <div className="flex items-center justify-center gap-4">
         <Image
-                src="/Uni_logo1.png"
-                alt="FAST University Logo"
-                width={60}
-                height={60}
-                className="object-contain"
-              />
-              <div>
-                <h2 className="text-lg font-bold text-red-500">
-                  Final Year Project
-                </h2>
-                <p className="text-sm text-gray-400">
-                  FAST School of Computing
-                </p>
-              </div>
-            </div>
-            <div className="flex flex-col md:flex-row gap-3 md:items-center">
-              {/* Team Members */}
-              <div className="bg-gradient-to-r from-red-900/40 to-red-800/30 border border-red-700/50 rounded-lg px-5 py-3 backdrop-blur-sm shadow-lg">
-                <div className="flex items-center gap-2 mb-2">
-                  <svg className="w-4 h-4 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                  </svg>
-                  <span className="text-xs font-bold text-red-400 uppercase tracking-wider">Team</span>
-                </div>
-                <div className="space-y-1">
-                  <div className="flex items-center gap-2">
-                    <span className="text-sm font-semibold text-gray-100">Ali Shahid</span>
-                    <span className="text-xs text-gray-500 bg-gray-800/50 px-2 py-0.5 rounded">21L-5243</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="text-sm font-semibold text-gray-100">Sheikh Abdul Rahim</span>
-                    <span className="text-xs text-gray-500 bg-gray-800/50 px-2 py-0.5 rounded">21L-7709</span>
-                  </div>
-                </div>
-              </div>
-              
-              {/* Supervisor */}
-              <div className="bg-gradient-to-r from-red-900/40 to-red-800/30 border border-red-700/50 rounded-lg px-5 py-3 backdrop-blur-sm shadow-lg">
-                <div className="flex items-center gap-2 mb-2">
-                  <svg className="w-4 h-4 text-red-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                  </svg>
-                  <span className="text-xs font-bold text-red-400 uppercase tracking-wider">Supervisor</span>
-                </div>
-                <p className="text-sm font-semibold text-gray-100">Dr. Muhammad Aasim Qureshi</p>
-              </div>
+              src="/Uni_logo1.png"
+              alt="FAST University Logo"
+              width={60}
+              height={60}
+              className="object-contain"
+            />
+            <div>
+              <h2 className="text-lg font-bold text-red-500">
+                Final Year Project
+              </h2>
+              <p className="text-sm text-gray-400">
+                FAST School of Computing
+              </p>
             </div>
           </div>
         </div>
@@ -674,7 +640,7 @@ export default function Home() {
               className="px-10 py-5 bg-red-600 hover:bg-red-700 text-white font-bold text-xl rounded-lg transition-all duration-300 pulse-glow transform hover:scale-105 shadow-lg shadow-red-600/50"
             >
               DOWNLOAD GAME
-            </a>
+          </a>
           <a
               href="https://drive.google.com/file/d/1cfbfa5NwUGNBCLRRQAs0lvcxKedlUzeh/view?usp=sharing"
             target="_blank"
@@ -754,12 +720,49 @@ export default function Home() {
 
       {/* Footer */}
       <footer className="py-8 px-4 bg-black border-t border-red-900/30">
-        <div className="max-w-6xl mx-auto text-center text-gray-500">
-          <p className="mb-2">© 2024 Zombie Express. All rights reserved.</p>
-          <p className="text-sm">A Horror Survival Game - Final Year Project</p>
-          <p className="text-xs mt-2 text-gray-600">
-            FAST School of Computing | Team: Ali Shahid (21L-5243), Sheikh Abdul Rahim (21L-7709) | Supervisor: Dr. Muhammad Aasim Qureshi
-          </p>
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center text-gray-500 mb-6">
+            <p className="mb-2">© 2024 Zombie Express. All rights reserved.</p>
+            <p className="text-sm">A Horror Survival Game - Final Year Project</p>
+          </div>
+          
+          {/* Team and Supervisor Info */}
+          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+            {/* Team Members */}
+            <div className="bg-gradient-to-r from-red-900/20 to-red-800/10 border border-red-900/30 rounded-lg px-6 py-4">
+              <div className="flex items-center gap-2 mb-3">
+                <svg className="w-5 h-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                </svg>
+                <h3 className="text-sm font-bold text-red-400 uppercase tracking-wider">Team Members</h3>
+              </div>
+              <div className="space-y-2 text-sm text-gray-300">
+                <div className="flex items-center justify-between">
+                  <span className="font-semibold">Ali Shahid</span>
+                  <span className="text-xs text-gray-500 bg-gray-800/50 px-2 py-1 rounded">21L-5243</span>
+                </div>
+                <div className="flex items-center justify-between">
+                  <span className="font-semibold">Sheikh Abdul Rahim</span>
+                  <span className="text-xs text-gray-500 bg-gray-800/50 px-2 py-1 rounded">21L-7709</span>
+                </div>
+              </div>
+            </div>
+            
+            {/* Supervisor */}
+            <div className="bg-gradient-to-r from-red-900/20 to-red-800/10 border border-red-900/30 rounded-lg px-6 py-4">
+              <div className="flex items-center gap-2 mb-3">
+                <svg className="w-5 h-5 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                </svg>
+                <h3 className="text-sm font-bold text-red-400 uppercase tracking-wider">Supervisor</h3>
+              </div>
+              <p className="text-sm font-semibold text-gray-300">Dr. Muhammad Aasim Qureshi</p>
+            </div>
+          </div>
+          
+          <div className="text-center text-xs text-gray-600 mt-6">
+            <p>FAST School of Computing</p>
+          </div>
         </div>
       </footer>
     </div>
